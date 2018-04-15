@@ -1,4 +1,5 @@
-import { Console } from 'console';
+import Bridge from './bridge';
 
-const console = new Console(process.stdout, process.stderr);
-console.log('Hello, world!');
+process.env.BRIDGES.split(',').forEach((ids) => {
+  const bridge = new Bridge(...ids.split('::'));
+});

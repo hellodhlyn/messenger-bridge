@@ -62,3 +62,7 @@ typings/
 
 # Babel build ouput
 dist/
+
+# Sensitives
+.envrc
+appstate.json
